@@ -10,7 +10,8 @@
 - [Methodology](#methodology)  
   - [Forecasting Models](#1-forecasting-models)  
   - [Adversarial Attacks](#2-adversarial-attacks)  
-  - [Defense Strategy: Ensemble Adversarial Training (EAT)](#3-defense-strategy-ensemble-adversarial-training-eat)  
+  - [Defense Strategy: Ensemble Adversarial Training (EAT)](#3-defense-strategy-ensemble-adversarial-training-eat)
+- [Summary of Results](#Summary-of-Results)
 - [Citation](#citation)  
 - [Installation & Usage](#installation--usage)  
 
@@ -54,6 +55,15 @@ We implement **black-box adversarial attacks** on DLR forecasting models:
 - **Dynamic Weighted Averaging (DWA)** used to balance clean and attacked data.  
 - **Significantly reduces error under attack scenarios**, ensuring stable grid operations.  
 ![Defense approach algorithm](Image/Algo_def.png)
+## **Summary of Results**  
+The proposed **Ensemble Adversarial Training (EAT)-based model** significantly improves the robustness of **Dynamic Line Rating (DLR) forecasting** under adversarial attacks.  
+
+- **Baseline Performance:** CatBoost outperformed other models in normal conditions, achieving the lowest RMSE and MAPE.  
+- **Impact of Adversarial Attacks:** FGSM and BIM attacks severely degraded forecasting accuracy, increasing RMSE by up to **600%**.  
+- **Effectiveness of EAT Defense:** The EAT-based approach successfully mitigated attack impacts, reducing error rates and restoring prediction accuracy close to pre-attack levels.  
+
+**Conclusion:** The **EAT model enhances forecasting reliability**, ensuring stable grid operations even in adversarial environments.  
+
 ## **Citation**  
 If you use this work, please cite:  
 

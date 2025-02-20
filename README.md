@@ -5,7 +5,8 @@
 ## **Table of Contents**  
 - [Overview](#overview)  
 - [Key Contributions](#key-contributions)  
-- [Dataset](#dataset)  
+- [Dataset](#dataset)
+- [IEEE 738-2012 Standard](#ieee-738-2012-standard) 
 - [Methodology](#methodology)  
   - [Forecasting Models](#1-forecasting-models)  
   - [Adversarial Attacks](#2-adversarial-attacks)  
@@ -31,6 +32,9 @@ This repository contains the implementation of an [Ensemble adversarial training
   - Wind Direction  
   - Global Horizontal Irradiance (GHI)  
 - **Dynamic Line Rating Calculation:** Based on **IEEE 738-2012 standard**.  
+## **IEEE 738-2012 Standard**  
+The **IEEE 738-2012 Standard** provides a comprehensive framework for determining the **current-temperature relationship** of overhead transmission lines. It plays a crucial role in **Dynamic Line Rating (DLR)** by taking into account the real-time influence of meteorological parameters.  
+![IEEE 738-2012 Standard](Image/DLR drawing_final.jpg)  
 
 ## **Methodology**  
 ### **1. Forecasting Models**  

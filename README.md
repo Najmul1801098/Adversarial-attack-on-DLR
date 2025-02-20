@@ -61,8 +61,8 @@ The proposed **Ensemble Adversarial Training (EAT)-based model** significantly i
 - **Baseline Performance:** CatBoost outperformed other models in normal conditions, achieving the lowest RMSE and MAPE.  
 - **Impact of Adversarial Attacks:** FGSM and BIM attacks severely degraded forecasting accuracy, increasing RMSE by up to **600%**.  
 - **Effectiveness of EAT Defense:** The EAT-based approach successfully mitigated attack impacts, reducing error rates and restoring prediction accuracy close to pre-attack levels.  
-
-**Conclusion:** The **EAT model enhances forecasting reliability**, ensuring stable grid operations even in adversarial environments.  
+![Error comparison](Image/Error.png)
+**Conclusion:** The **EAT model enhances forecasting reliability**, ensuring stable grid operations even in adversarial attacks.  
 
 ## **Citation**  
 If you use this work, please cite:  

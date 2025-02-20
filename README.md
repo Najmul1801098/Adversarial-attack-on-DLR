@@ -1,16 +1,74 @@
-# Ensemble adversarial training-based robust model for multi-horizon dynamic line rating forecasting against adversarial attacks
- Dynamic line rating (DLR) forecasting is critical in the effective and economical utilization of overhead
- lines (OHLs) in smart grids, which facilitates the integration of renewable energy sources and reduces
- infrastructure upgrade costs. The forecasting techniques used for DLR rely on weather data collected from
- sensors as well as data communication, which can introduce a potential vulnerability to adversarial attacks.
- Hence, this work utilizes extreme gradient boosting (XgBoost), categorical boosting (CatBoost), and random
- forest as ensemble learning techniques for multi-horizon forecasting, while investigating their vulnerability
- by introducing adversarial attacks using two different attack models with variable data contamination and
- perturbations. Additionally, ensemble adversarial training (EAT)-based countermeasure is proposed for robust
- and accurate DLR forecasting. Experimental results indicate the outperformance of the CatBoost method
- compared to XgBoost and random forest models under normal conditions, while highlighting the vulnerability
- of all models to adversarial attacks in terms of root mean square error (RMSE) and mean absolute percentage
- error (MAPE). The proposed CatBoost with EAT significantly mitigates the impacts of adversarial attacks and
- retains accuracy under normal conditions. This research contributes to developing an accurate, cyber-resilience,
- and reliable forecasting methodology for line rating technology, leading towards academic and industrial
- developments in smart grids.
+# **Ensemble Adversarial Training-Based Robust Model for Multi-Horizon Dynamic Line Rating Forecasting Against Adversarial Attacks**  
+
+![Workflow Overview](Image/Flowchart.jpg)  
+
+## **Table of Contents**  
+- [Overview](#overview)  
+- [Key Contributions](#key-contributions)  
+- [Dataset](#dataset)  
+- [Methodology](#methodology)  
+  - [Forecasting Models](#1-forecasting-models)  
+  - [Adversarial Attacks](#2-adversarial-attacks)  
+  - [Defense Strategy: Ensemble Adversarial Training (EAT)](#3-defense-strategy-ensemble-adversarial-training-eat)  
+- [Citation](#citation)  
+- [Installation & Usage](#installation--usage)  
+
+## **Overview**  
+This repository contains the implementation of an [Ensemble adversarial training (EAT)-based robust forecasting model for multi-horizon dynamic line rating (DLR) against adversarial attacks}(https://github.com/Najmul1801098/Adversarial-attack-on-DLR/blob/main/Adversarial_attack_resilient_dynamic_line_rating_forecasting%20%5BFinal%5D.pdf). The study explores vulnerabilities in DLR forecasting due to adversarial manipulations and proposes a resilient forecasting approach leveraging ensemble learning techniques. 
+
+## **Key Contributions**  
+- Introduces an **ensemble adversarial training (EAT)**-based approach for **multi-horizon dynamic line rating (DLR) forecasting**.  
+- Uses **XGBoost, CatBoost, and Random Forest** as base models.  
+- Investigates vulnerabilities using **FGSM and BIM adversarial attack models**.  
+- Proposes a **robust forecasting method** to mitigate adversarial impacts.  
+- Evaluates model performance under **normal, attacked, and mitigated conditions** using RMSE and MAPE.  
+
+## **Dataset**  
+- **Source:** Meteorological and grid parameter data from **Trang-Thap Cham 220 kV overhead transmission line**.  
+- **Features:**  
+  - Ambient Temperature  
+  - Wind Speed  
+  - Wind Direction  
+  - Global Horizontal Irradiance (GHI)  
+- **Dynamic Line Rating Calculation:** Based on **IEEE 738-2012 standard**.  
+
+## **Methodology**  
+### **1. Forecasting Models**  
+The following machine learning models are used for DLR forecasting:  
+- **XGBoost:** Gradient boosting-based decision tree model.  
+- **CatBoost:** Handles categorical features efficiently, used as the optimal model.  
+- **Random Forest:** Ensemble learning with multiple decision trees.  
+
+### **2. Adversarial Attacks**  
+We implement **black-box adversarial attacks** on DLR forecasting models:  
+- **FGSM (Fast Gradient Sign Method)** – Generates perturbations in a single step.  
+- **BIM (Basic Iterative Method)** – Iteratively refines perturbations for stronger attacks.  
+- **Attack Focus:** Manipulation of temperature data to disrupt DLR predictions.  
+
+### **3. Defense Strategy: Ensemble Adversarial Training (EAT)**  
+- **Multiple adversarial-trained models** combined for robust forecasting.  
+- **Dynamic Weighted Averaging (DWA)** used to balance clean and attacked data.  
+- **Significantly reduces error under attack scenarios**, ensuring stable grid operations.  
+
+## **Citation**  
+If you use this work, please cite:  
+
+```bibtex
+@article{ALAM2025111289,
+title = {Ensemble adversarial training-based robust model for multi-horizon dynamic line rating forecasting against adversarial attacks},
+journal = {Electric Power Systems Research},
+volume = {241},
+pages = {111289},
+year = {2025},
+issn = {0378-7796},
+doi = {https://doi.org/10.1016/j.epsr.2024.111289},
+url = {https://www.sciencedirect.com/science/article/pii/S0378779624011751},
+author = {Najmul Alam and M.A. Rahman and Md. Rashidul Islam and M.J. Hossain}
+}
+```
+## **Installation & Usage**  
+1. **Clone the Repository:**  
+   
+bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository in this add table of content

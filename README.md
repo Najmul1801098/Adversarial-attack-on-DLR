@@ -15,7 +15,7 @@
 - [Installation & Usage](#installation--usage)  
 
 ## **Overview**  
-This repository contains the implementation of an [Ensemble adversarial training (EAT)-based robust forecasting model for multi-horizon dynamic line rating (DLR) against adversarial attacks}(https://github.com/Najmul1801098/Adversarial-attack-on-DLR/blob/main/Adversarial_attack_resilient_dynamic_line_rating_forecasting%20%5BFinal%5D.pdf). The study explores vulnerabilities in DLR forecasting due to adversarial manipulations and proposes a resilient forecasting approach leveraging ensemble learning techniques. 
+This repository contains the implementation of an [Ensemble adversarial training (EAT)-based robust forecasting model for multi-horizon dynamic line rating (DLR) against adversarial attacks](https://github.com/Najmul1801098/Adversarial-attack-on-DLR/blob/main/Adversarial_attack_resilient_dynamic_line_rating_forecasting%20%5BFinal%5D.pdf). The study explores vulnerabilities in DLR forecasting due to adversarial manipulations and proposes a resilient forecasting approach leveraging ensemble learning techniques. 
 
 ## **Key Contributions**  
 - Introduces an **ensemble adversarial training (EAT)**-based approach for **multi-horizon dynamic line rating (DLR) forecasting**.  
@@ -25,7 +25,7 @@ This repository contains the implementation of an [Ensemble adversarial training
 - Evaluates model performance under **normal, attacked, and mitigated conditions** using RMSE and MAPE.  
 
 ## **Dataset**  
-- **Source:** Meteorological and grid parameter data from **Trang-Thap Cham 220 kV overhead transmission line**.  
+- **Source:** Meteorological and grid parameter data from [**Trang-Thap Cham 220 kV overhead transmission line**](https://github.com/Najmul1801098/Adversarial-attack-on-DLR/tree/main/Data).  
 - **Features:**  
   - Ambient Temperature  
   - Wind Speed  
@@ -33,8 +33,8 @@ This repository contains the implementation of an [Ensemble adversarial training
   - Global Horizontal Irradiance (GHI)  
 - **Dynamic Line Rating Calculation:** Based on **IEEE 738-2012 standard**.  
 ## **IEEE 738-2012 Standard**  
-The **IEEE 738-2012 Standard** provides a comprehensive framework for determining the **current-temperature relationship** of overhead transmission lines. It plays a crucial role in **Dynamic Line Rating (DLR)** by taking into account the real-time influence of meteorological parameters.  
-![IEEE 738-2012 Standard](Image/DLR drawing_final.jpg)  
+The **IEEE 738-2012 Standard** provides a comprehensive framework for determining the **current-temperature relationship** of overhead transmission lines. It plays a crucial role in **Dynamic Line Rating (DLR)** by taking into account the real-time influence of meteorological parameters.   
+![IEEE 738-2012 Standard](Image/DLR.jpg)
 
 ## **Methodology**  
 ### **1. Forecasting Models**  
@@ -53,7 +53,7 @@ We implement **black-box adversarial attacks** on DLR forecasting models:
 - **Multiple adversarial-trained models** combined for robust forecasting.  
 - **Dynamic Weighted Averaging (DWA)** used to balance clean and attacked data.  
 - **Significantly reduces error under attack scenarios**, ensuring stable grid operations.  
-
+![Defense approach algorithm](Image/Algo_def.png)
 ## **Citation**  
 If you use this work, please cite:  
 
